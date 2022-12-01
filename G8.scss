@@ -1,7 +1,18 @@
-$primary:#b9d0e7 ;
-$secondary: #cafff7;
+$primary:#fddb40;
+$secondary: #ffa41b;
+$dark:#e34848;
 $btn-font-family:ink free;
 $btn-border-radius:10rem;
+
+
+$primary-size:1.2rem;
+$primary-font : 'Franklin Gothic Medium';
+
+* {
+  font-family: $primary-font;
+  font-size: $primary-size
+}
+
 
 
 @import "./node_modules/bootstrap/scss/bootstrap";
