@@ -2,13 +2,14 @@
 <html>
 <head> 
        <link rel="stylesheet" href="../G8.css">
+       <link rel="stylesheet" href="../pokeapi.css">
        <title>HOME</title>
 </head>
 
 <body class="bg-dark">
        <header>
               
-                     <div class="row ">
+          <div class="row ">
                             <div class="col col-12 bg-secondary text-center p-2">HOME</div>
                             <nav class="navbar navbar-expand-lg navbar-light bg-primary">
                                    <div class="container-fluid">
@@ -41,19 +42,69 @@
 
 
                             
-                     </div>
-                     </div>
-
-              
+          </div>
+                  
        </header>
        <div class="container ">
               <div class="row ">
-                     <div class="col col-md-8 bg-primary border border-5 border-dark pb-5 col-12">
+                     
+                     <div class="col col-md-4 bg-primary  ml-5 border border-5 border-dark pb-5 col-12 " id="filtratje" >
+                            <select id="tipus"></select>
+                            <input id="nomPK">
+                            <div id="stats-container">
+                                   <div class="stat" id="hp">
+                                     <span class="stat-label">HP:</span>
+                                     <div class="stat-bar">
+                                           <div class="stat-bar-fill" id="hp-bar"></div>
+                                     </div>
+                                     <label for="hp-bar"> </label>
+                                   </div>
+                                   <div class="stat" id="atac">
+                                     <span class="stat-label">Atac:</span>
+                                     <div class="stat-bar">
+                                           <div class="stat-bar-fill" id="atac-bar"></div>
+                                     </div>
+                                     <label for="atac-bar"></label>
+                                   </div>
+                                   <div class="stat" id="def">
+                                       <span class="stat-label">Defensa:</span>
+                                       <div class="stat-bar">
+                                           <div class="stat-bar-fill" id="def-bar"></div>
+                                       </div>
+                                       <label for="def-bar"></label>
+                                   </div>
+                                   <div class="stat" id="atacSp">
+                                       <span class="stat-label">Atac Especial:</span>
+                                       <div class="stat-bar">
+                                           <div class="stat-bar-fill" id="atacSp-bar"></div>
+                                       </div>
+                                       <label for="atacSp-bar"></label>
+                                     </div>
+                                     <div class="stat" id="defSp">
+                                       <span class="stat-label">Defensa Especial:</span>
+                                       <div class="stat-bar">
+                                           <div class="stat-bar-fill" id="defSp-bar"></div>
+                                       </div>
+                                       <label for="defSp-bar"></label>
+                                     </div>
+                                     <div class="stat" id="vel">
+                                       <span class="stat-label">Velocitat:</span>
+                                       <div class="stat-bar">
+                                           <div class="stat-bar-fill" id="vel-bar"></div>
+                                       </div>
+                                       <label for="vel-bar"></label>
+                                   </div>
+                               </div>
+                               <div id="caracteristiques"></div>
+                               
+                           
+                            
+                     </div>
+                     <div class="col col-md-8 bg-primary border border-5 border-dark pb-5 col-12" >
+                      <div class="contenidor"></div>
+                      
 
-                     </div>
-                     <div class="col col-md-4 bg-primary ml-5 border border-5 border-dark pb-5 col-12">
-                          
-                     </div>
+               </div>
        </div>
        <footer>
               <div class="row  border border-5 border-dark">
@@ -62,5 +113,6 @@
               </div>
        </footer>
        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="../typeScript/pkm.js" defer></script>
 </body>
 </html>
