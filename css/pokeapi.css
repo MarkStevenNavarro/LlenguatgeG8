@@ -1,0 +1,112 @@
+*{
+    font-size: 20px;
+}
+#git{
+  width: 3rem;
+}
+
+#filtratje{
+    max-height: 35rem;
+    
+}
+  
+.contenidor{
+    min-height:10rem ;
+    height: auto;
+    
+}
+.stat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  /*color de la lletra de les estadistiques*/
+  .stat-label {
+    display: inline-block;
+    width: 4.5rem;
+    color: #333;
+    font-weight: bold;
+  }
+  /*color de fons de la barra d'estat*/
+  .stat-bar {
+    width: 180px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  /*classe per iniciar la barra d'estat com a vermella*/
+  .stat-bar-fill {
+    height: 100%;
+    background-color: #ff0000;
+    transition: width 0.5s ease;
+  }
+  label{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    
+  }
+	
+ #tipus{
+  
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+#tipus{
+	max-width: 250px;
+	position: relative;
+}
+ 
+ select#tipus{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+  	padding: 7px 10px;
+  	height: 42px;
+  	outline: 0; 
+  	border: 0;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #7b7b7b;
+	font-size: 1em;
+	color: #999;
+	font-family: 
+	'Quicksand', sans-serif;
+	border:2px solid rgba(0,0,0,0.2);
+    border-radius: 12px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+ 
+ select#tipus:hover{
+	background: #B1E8CD;
+}
+ 
+
+select#tipus i{
+	position: absolute;
+	right: 20px;
+	top: calc(50% - 13px);
+	width: 16px;
+	height: 16px;
+	display: block;
+	border-left:4px solid #2AC176;
+	border-bottom:4px solid #2AC176;
+	transform: rotate(-45deg); 
+	transition: all 0.25s ease;
+}
+ 
+select#tipus:hover i{
+	margin-top: 3px;
+}
+input{
+  margin-bottom: 1rem;
+}
+img:hover{
+  cursor: pointer;
+
+}
